@@ -1,22 +1,24 @@
-zing.h : το header file που μας δόθηκε μαζί με το object file του από το εργαστήριο
+1.1
+Compile and link properly the files.
 
-main.c : το source code που χρησιμοποιεί τη συνάρτηση zing() στη πρώτη άσκηση
+1.2
+Take the content of two given files and put them in a third one using system calls
 
-zing : το εκτελέσιμο που προκύπτει από τη σύνδεση του object file της main.c (main.o) και
-       από το object file zing.o που μας είχε δοθεί
+example input-output:
+$ ./fconc A
+Usage: ./fconc infile1 infile2 [outfile (default:fconc.out)]
+$ ./fconc A B
+A: No such file or directory
+$ echo 'Goodbye,' > A
+$ echo 'and thanks for all the fish!' > B
+$ ./fconc A B
+$ cat fconc.out
+Goodbye,
+and thanks for all the fish!
+$ ./fconc A B C
+$ cat C
+Goodbye,
+and thanks for all the fish!
 
-zing2.c : το source code για τη δική μας συνάρτηση zing()
-
-main2.c : το source code για την υλοποίηση της fconc στη δεύτερη άσκηση
-
-profconc : το source code για την υλοποίηση της προαιρετικής επέκτασης της fconc
-
-Makefile : εμπεριέχει όλες τις μεταγλωττίσεις των αρχείων και τη σύνδεση των κατάλληλων 
-           object files για την παραγωγή των εκτελέσιμων
-
-Το Makefile θα δημιουργήσει 4 εκτελέσιμα:
-  το zing για την αρχική συνάρτηση zing()
-  το zing2 για τη δική μας συνάρτηση zing()
-  το fconc για τη συνένωση αρχείων
-  το pro3 για την προαιρετική επέκταση της προηγούμενης fconc
- 
+ 1.3
+ Use the same logic for more files...
