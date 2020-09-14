@@ -1,27 +1,8 @@
-ask2-fork.c : το source code για δημιουργία δοσμένου δέντρου διεργασιών (1.1)
+ask2-fork.c : create a specific tree of processes 
 
-tree-example.c : το source code για τη δημιουργία δέντρου διεργασιών από αρχείο 
-                 εισόδου που περιγράφει το δέντρο (1.2)
+tree-example.c : create a tree of processes that is described in given file.
 
-ask2-signals.c : το source code για τη δημιουργια δεντρου διεργασιων με χρήση σημάτων από
-                 αρχείο εισόδου που περιγράφει το δέντρο (1.3)
+ask2-signals.c : same as above using signals for DFS traversal.
 
-last.c : το source code για τη δημιουργία δέντρου διεργασιών υπολογισμού από αρχείο εισόδου
-         που περιγράφει το δέντρο και υπολογισμός του αριθμητικού αποτελέσματος (1.4)
+last.c : compute the outcome of a tree of processes given in a file that describes a sequense of additions and multiplications.
 
-proc-common.c : βοηθητικές συναρτήσεις που μας δόθηκαν
-
-proc-common.h : τα headers των παραπάνω βοηθητικών συναρτήσεων
-
-tree.c : βοηθητικές συναρτήσεις που μας δόθηκαν
-
-tree.h : τα headers των παραπάνω βοηθητικών συναρτήσεων
-
-Makefile : εμπεριέχει όλες τις μεταγλωττίσεις των αρχείων και τη σύνδεση των κατάλληλων 
-           object files για την παραγωγή των εκτελέσιμων
-
-Το Makefile θα δημιουργήσει 4 εκτελέσιμα:
-  το ask2-fork για την 1.1
-  το tree-example για την 1.2
-  το ask2-signals για την 1.3
-  το last για την 1.4
